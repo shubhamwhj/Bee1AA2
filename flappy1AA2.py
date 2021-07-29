@@ -12,12 +12,12 @@ screen = pygame.display.set_mode((width,height))
 images={}
 images["bg1"] = pygame.image.load("bg1.png").convert_alpha()
 images["base"] = pygame.image.load("base.png").convert_alpha()
-images["bird"] = pygame.image.load("redbird-midflap.png").convert_alpha()
+images["bee"] = pygame.image.load("redbird-midflap.png").convert_alpha()
 images["pipe"] = pygame.image.load("pipe-red.png").convert_alpha()
 images["message"] = pygame.image.load("message.png").convert_alpha()
 images["over"] = pygame.image.load("gameover.png").convert_alpha()
 images["cloud"]=pygame.image.load("cloud.png").convert_alpha()
-bird= pygame.Rect(100,250,30,30)
+bee= pygame.Rect(100,250,30,30)
 groundx=0
 x1=100    
 while True:    
@@ -39,7 +39,7 @@ while True:
     
     
     screen.blit(images["cloud"],[x1,70])
-    screen.blit(images["bird"],bird)    
+    screen.blit(images["bird"],bee)    
     screen.blit(images["base"],[groundx,550])
    
     pygame.display.update()
